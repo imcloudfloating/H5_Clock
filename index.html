@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Clock</title>
+</head>
+
+<body onload="getTime()">
+    <div class="background"></div>
+    <div class="container">
+        <canvas width="600" height="600" id="time"></canvas>
+        <div class="content">
+            <h1 class="time"></h1>
+            <h2 class="week"></h2>
+            <h3 class="date"></h3>
+            <h3 class="year"></h3>
+        </div>
+        <h3 class="sentence">Everything will be OK.</h3>
+    </div>
+    <canvas class="snow"></canvas>
+    <a onclick="changeImage()">
+        <div id="next"></div>
+    </a>
+    <a onclick="toggleSnow()">
+        <div id="snow-toggle" class="snow-enabled"></div>
+    </a>
+</body>
+
+</html>
